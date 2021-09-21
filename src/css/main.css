@@ -144,8 +144,6 @@ select {
     border: none;
   }
   .header__title_section {
-    height: 99px;
-    margin: auto;
     margin-top: 33px;
     position: absolute;
     -webkit-transform: translateX(48px);
