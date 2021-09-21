@@ -236,8 +236,19 @@ select {
   }
 }
 
+.is-closed {
+  display: none;
+}
+
 .menu {
   background: rgba(254, 243, 228, 0.9);
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  -webkit-transform: translateY(-615px);
+          transform: translateY(-615px);
 }
 
 .menu__close_button {
@@ -246,8 +257,8 @@ select {
   position: absolute;
   width: 25px;
   height: 18px;
-  -webkit-transform: translate(275px, 15px);
-          transform: translate(275px, 15px);
+  -webkit-transform: translate(267px, 18px);
+          transform: translate(267px, 18px);
 }
 
 .menu__close_svg {
