@@ -95,23 +95,38 @@
     color: $whiteColor;
   }
 
-  .header_socials_section {
-    display: block;
+  .header_socials_backround {
+    width: 290px;
+    height: 310px;
+    background-image: url(../images/mobile/lanch-box@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/lanch-box@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../images/mobile/lanch-box@4x.png);
+    }
+  }
+
+  .header_socials {
+    width: 61px;
     margin-left: 129px;
   }
 
   .header_socials_list {
+    width: 61px;
     display: flex;
     justify-content: space-between;
-    width: 61px;
   }
 
   .header_socials_svg {
     fill: $mainColor;
   }
 
-  .hero__main_img {
-    position: absolute;
-    transform: translateY(-20px);
+  .hero__main_pic {
+    pointer-events: all;
   }
 }

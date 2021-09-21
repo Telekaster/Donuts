@@ -180,26 +180,46 @@ select {
     line-height: 1.4;
     color: #ffffff;
   }
-  .header_socials_section {
-    display: block;
+  .header_socials_backround {
+    width: 290px;
+    height: 310px;
+    background-image: url(../images/mobile/lanch-box@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
+  .header_socials_backround {
+    background-image: url(../images/mobile/lanch-box@2x.png);
+  }
+}
+
+@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
+  .header_socials_backround {
+    background-image: url(../images/mobile/lanch-box@4x.png);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header_socials {
+    width: 61px;
     margin-left: 129px;
   }
   .header_socials_list {
+    width: 61px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 61px;
   }
   .header_socials_svg {
     fill: #2e2520;
   }
-  .hero__main_img {
-    position: absolute;
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+  .hero__main_pic {
+    pointer-events: all;
   }
 }
 /*# sourceMappingURL=main.css.map */
