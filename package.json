@@ -3,20 +3,20 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://telekaster.github.io/Donuts/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /Donuts/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Telekaster/Donuts.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Oleg Bondarenko <schastliviy.sluchay@ukr.net>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://telekaster.github.io/Donuts/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
