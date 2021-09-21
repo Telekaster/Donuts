@@ -80,4 +80,32 @@
     text-align: center;
     color: $mainColor;
   }
+
+  .header__register_button {
+    display: block;
+    margin: auto;
+    margin-top: 167px;
+    margin-bottom: 45px;
+    width: 145px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background: $brandColor;
+
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $whiteColor;
+  }
+
+  .header_socials_section {
+    display: block;
+    margin-left: 129px;
+  }
+
+  .header_socials_list {
+    display: flex;
+    justify-content: space-between;
+    width: 61px;
+  }
 }
