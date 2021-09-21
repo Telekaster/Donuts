@@ -19,8 +19,8 @@
       <picture class="header__donuts_img">
         <source
         srcset="./images/mobile/pic_background@1x.png 1x, ./images/mobile/pic_background@2x.png 2x, ./images/mobile/pic_background@4x.png 4x"
-        media="(max-width: 769px)" type="image/png" loading="lazy"/>
-      <img src="./images/mobile/pic_background@2x.png" alt="Пончики">
+        media="(max-width: 769px)" type="image/png"/>
+      <img src="./images/mobile/pic_background@2x.png" alt="Пончики" loading="lazy">
       </picture>
 
 
@@ -78,22 +78,22 @@
         </div>
 
       </div>
-      
-      <!-- Mobile menu -->
-      <div class="menu is-closed">
 
+      <!-- Mobile menu -->
+      <div class="menu menu_is-hidden">
+      
         <button type="button" class="menu__close_button">
           <svg class="menu__close_svg">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-
+      
         <a href="./index.html" class="menu__logo_link">
           <svg class="menu__logo_svg">
             <use href="./images/sprite.svg#icon-logo"></use>
           </svg>
         </a>
-
+      
         <ul class="menu__list">
           <li class="menu__item">
             <a href="" class="menu__link">About us</a>
@@ -109,6 +109,8 @@
           </li>
         </ul>
       </div>
+      
+
 
 
     </header>
