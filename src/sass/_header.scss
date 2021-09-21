@@ -84,7 +84,7 @@
   .header__register_button {
     display: block;
     margin: auto;
-    margin-top: 167px;
+    margin-top: 180px;
     margin-bottom: 45px;
     width: 145px;
     height: 40px;
@@ -107,5 +107,9 @@
     display: flex;
     justify-content: space-between;
     width: 61px;
+  }
+
+  .header_socials_svg {
+    fill: $mainColor;
   }
 }
