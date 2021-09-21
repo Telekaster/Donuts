@@ -1,0 +1,172 @@
+@charset "UTF-8";
+CSS
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 320px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header__section {
+    width: 320px;
+    height: 460px;
+    margin: auto;
+    background-image: url(../images/header_bg@1x.png);
+    width: 320px;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-device-pixel-ratio: 2) {
+  .header__section {
+    background-image: url(../images/header_bg@2x.png);
+  }
+}
+
+@media screen and (max-width: 769px) and (min-device-pixel-ratio: 3) {
+  .header__section {
+    background-image: url(../images/header_bg@4x.png);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header__donuts_img {
+    position: absolute;
+  }
+  .header__logo_link {
+    display: block;
+    width: 96px;
+    height: 43px;
+    margin: auto;
+    padding-top: 7px;
+  }
+  .header__logo_svg {
+    width: 96px;
+    height: 43px;
+  }
+  .header__menu_svg {
+    width: 30px;
+    height: 16px;
+    fill: #2e2520;
+  }
+  .header__menu_button {
+    position: absolute;
+    -webkit-transform: translateX(259px);
+            transform: translateX(259px);
+    top: 15px;
+    background: none;
+    border: none;
+  }
+  .header__title_section {
+    width: 224px;
+    height: 99px;
+    margin: auto;
+    margin-top: 33px;
+    position: absolute;
+    -webkit-transform: translateX(48px);
+            transform: translateX(48px);
+  }
+  .header__title_hero {
+    font-family: Caveat Brush, Arial;
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    color: #2e2520;
+  }
+  .header__title_text {
+    margin-top: 3px;
+    font-family: Montserrat, Arial;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #2e2520;
+  }
+}
+/*# sourceMappingURL=main.css.map */

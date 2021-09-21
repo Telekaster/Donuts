@@ -2,20 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,500;1,400&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Oh My Donuts</title>
+
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+   <!-- Header -->
+    <header class="header__section">
+     
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+      <picture class="header__donuts_img">
+        <source
+        srcset="./images/mobile/pic_background@1x.png 1x, ./images/mobile/pic_background@2x.png 2x, ./images/mobile/pic_background@4x.png 4x"
+        media="(max-width: 768px)" type="image/png" loading="lazy"/>
+      <img src="./images/mobile/pic_background@2x.png" alt="Пончики">
+      </picture>
+
+      <a href="./index.html" class="header__logo_link">
+        <svg class="header__logo_svg">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <button type="button" class="header__menu_button">
+        <svg class="header__menu_svg">
+          <use href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <div class="header__title_section">
+        <h1 class="header__title_hero">Donut Masterclass with the Donut King</h1>
+        <p class="header__title_text">Hosted by Eva Green</p>
+      </div>
+      
+
+    </header>
+    <script src="./js/index.js"></script>
   </body>
 </html>
