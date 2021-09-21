@@ -93,6 +93,13 @@
     font-size: 18px;
     line-height: 1.4;
     color: $whiteColor;
+
+    transition: scale linear;
+  }
+
+  .header__register_button:hover,
+  .header__register_button:focus {
+    transform: scale(1.1);
   }
 
   .header_socials_backround {
@@ -124,6 +131,13 @@
 
   .header_socials_svg {
     fill: $mainColor;
+
+    transition: fill 500ms linear;
+  }
+
+  .header_socials_svg:hover,
+  .header_socials_svg:focus {
+    fill: $hoverColor;
   }
 
   .hero__main_pic {
