@@ -95,7 +95,7 @@ select {
     width: 320px;
     height: 460px;
     margin: auto;
-    background-image: url(../images/header_bg@1x.png);
+    background-image: url(../images/mobile/header_bg@1x.png);
     width: 320px;
     height: 460px;
     background-repeat: no-repeat;
@@ -103,15 +103,15 @@ select {
   }
 }
 
-@media screen and (max-width: 769px) and (min-device-pixel-ratio: 2) {
+@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
   .header__section {
-    background-image: url(../images/header_bg@2x.png);
+    background-image: url(../images/mobile/header_bg@2x.png);
   }
 }
 
-@media screen and (max-width: 769px) and (min-device-pixel-ratio: 3) {
+@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
   .header__section {
-    background-image: url(../images/header_bg@4x.png);
+    background-image: url(../images/mobile/header_bg@4x.png);
   }
 }
 
@@ -195,6 +195,11 @@ select {
   }
   .header_socials_svg {
     fill: #2e2520;
+  }
+  .hero__main_img {
+    position: absolute;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
 }
 /*# sourceMappingURL=main.css.map */
