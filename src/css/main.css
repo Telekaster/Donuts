@@ -247,15 +247,14 @@ ul {
 @media screen and (max-width: 769px) {
   .menu_is-hidden {
     display: none;
-    scale: 0.1;
   }
   .menu {
     background: rgba(254, 243, 228, 0.9);
     width: 320px;
     height: 100%;
     position: absolute;
-    -webkit-transform: translate(105px, -460px);
-            transform: translate(105px, -460px);
+    -webkit-transform: translate(0px, -615px);
+            transform: translate(0px, -615px);
     -webkit-transition: scale 500ms linear;
     transition: scale 500ms linear;
   }

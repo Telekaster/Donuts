@@ -1,7 +1,6 @@
 @media screen and (max-width: 769px) {
   .menu_is-hidden {
     display: none;
-    scale: 0.1;
   }
 
   .menu {
@@ -9,7 +8,7 @@
     width: 320px;
     height: 100%;
     position: absolute;
-    transform: translate(105px, -460px);
+    transform: translate(0px, -615px);
     transition: scale 500ms linear;
   }
 
