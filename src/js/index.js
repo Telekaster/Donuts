@@ -1,5 +1,9 @@
-import openMobileMenu from "./mobile-menu_open"
-import closeMobileMenu from './mobile-menu_closed'
+import openMobileMenu from "./mobile-menu_open";
+import closeMobileMenu from './mobile-menu_closed';
 
-openMobileMenu()
-closeMobileMenu()
+const menuButton = document.querySelector('.header__menu_button');
+const menu = document.querySelector('.menu');
+const closeButton = document.querySelector('.menu__close_button');
+
+openMobileMenu(menu, menuButton);
+closeMobileMenu(menu, menuButton, closeButton);

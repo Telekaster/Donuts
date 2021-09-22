@@ -184,8 +184,8 @@ select {
   }
   .header__register_button:hover,
   .header__register_button:focus {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   .header_socials_backround {
     width: 290px;
