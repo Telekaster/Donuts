@@ -311,19 +311,20 @@ ul {
 }
 
 @media screen and (max-width: 769px) {
-  .about {
+  .about, .program {
     margin: auto;
     margin-top: 150px;
     width: 290px;
+    margin-bottom: -150px;
   }
-  .about_title {
+  .about_title, .program__title {
     text-align: center;
     font-family: Caveat Brush, Arial;
     font-size: 24px;
     line-height: 2.7;
     color: #2e2520;
   }
-  .about_text_1, .about_text_2 {
+  .about_text_1, .about_text_2, .program__text, .program__item {
     font-family: Montserrat, Arial;
     font-size: 16px;
     line-height: 1.25;
@@ -333,11 +334,21 @@ ul {
     display: block;
     margin-top: 20px;
   }
-  .about_link {
+  .about_link, .program__link {
     font-family: Caveat Brush, Arial;
     font-size: 18px;
     line-height: 3.61;
     color: #ab816c;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .program__text {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .program__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

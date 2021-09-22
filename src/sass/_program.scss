@@ -1,0 +1,26 @@
+@media screen and (max-width: 769px) {
+  .program {
+    @extend .about;
+  }
+
+  .program__title {
+    @extend .about_title;
+  }
+  .program__text {
+    @extend .about_text_1;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .program__item {
+    @extend .about_text_1;
+  }
+
+  .program__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .program__link {
+    @extend .about_link;
+  }
+}
