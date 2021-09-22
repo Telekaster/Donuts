@@ -1,11 +1,7 @@
 @media screen and (max-width: 769px) {
   .menu_is-hidden {
     display: none;
-  }
-
-  .menu_is-open {
-    transform: translate(0px, -620px);
-    transition: transform 500ms linear;
+    scale: 0.1;
   }
 
   .menu {
@@ -13,6 +9,8 @@
     width: 320px;
     height: 100%;
     position: absolute;
+    transform: translate(105px, -460px);
+    transition: scale 500ms linear;
   }
 
   .menu__button_is-hidden {
