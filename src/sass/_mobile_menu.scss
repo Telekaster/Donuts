@@ -3,6 +3,12 @@
     display: none;
   }
 
+  .static {
+    position: static;
+    overflow: hidden;
+    scroll-behavior: unset;
+  }
+
   .menu {
     background: rgba(254, 243, 228, 0.9);
     width: 320px;
@@ -11,6 +17,7 @@
     z-index: 100;
     transform: translate(0px, -615px);
     transition: scale 500ms linear;
+    scroll-behavior: smooth;
   }
 
   .menu__button_is-hidden {
