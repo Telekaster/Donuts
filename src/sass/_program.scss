@@ -26,16 +26,50 @@
 
   // Events-------------------------
 
-  .events {
+  .events__section {
+    margin-top: 40px;
   }
 
   .event__1 {
-    width: 150px;
-    height: 142px;
-
     background-image: url(../images/mobile/program_bg@1x.png);
-    block-size: 150px, 142px;
+    width: 150px;
+    height: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/program_bg@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../images/mobile/program_bg@4x.png);
+    }
   }
+
+  .event__2 {
+    @extend .event__1;
+    margin-top: 57px;
+  }
+
+  .event__1_img {
+    position: absolute;
+    transform: translate(45%, -30px);
+  }
+
+  .event__2_img {
+    position: absolute;
+    transform: translate(50%, -30px);
+  }
+
+  .event__3_img {
+    position: absolute;
+    transform: translate(60%, -30px);
+  }
+  .event__4_img {
+    position: absolute;
+    transform: translate(60%, -30px);
+  }
+
   .event__title {
     padding-top: 49px;
     margin-bottom: 13px;
@@ -59,5 +93,10 @@
   .event__1_svg {
     display: block;
     margin: auto;
+  }
+
+  .event__area_2 {
+    position: absolute;
+    transform: translate(148px, -325px);
   }
 }
