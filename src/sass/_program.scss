@@ -1,6 +1,7 @@
 @media screen and (max-width: 769px) {
   .program {
     @extend .about;
+    margin-bottom: 60px;
   }
 
   .program__title {
