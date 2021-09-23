@@ -253,6 +253,7 @@ ul {
     width: 320px;
     height: 100%;
     position: absolute;
+    z-index: 100;
     -webkit-transform: translate(0px, -615px);
             transform: translate(0px, -615px);
     -webkit-transition: scale 500ms linear;
