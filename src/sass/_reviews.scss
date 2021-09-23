@@ -29,9 +29,59 @@
     transform: translate(110px, 40px);
   }
 
-  .rewiews__rate {
+  .reviews__rate {
     display: block;
     margin: auto;
     padding-top: 160px;
+  }
+
+  .reviews__name {
+    font-family: $secondaryFont;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 4.64;
+    text-align: center;
+    color: $mainColor;
+  }
+
+  .reviews__text {
+    display: block;
+    width: 290px;
+    margin: auto;
+    margin-bottom: 40px;
+
+    font-family: $secondaryFont;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: $mainColor;
+  }
+
+  .reviews__button_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reviews__button {
+    width: 50px;
+    height: 1px;
+    position: relative;
+    background: none;
+    border: none;
+  }
+
+  .reviews__button_svg {
+    position: absolute;
+    transform: translateX(-18px);
+  }
+
+  .reviews__button_pages {
+    font-family: $secondaryFont;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: $brandColor;
   }
 }

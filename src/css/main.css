@@ -467,10 +467,60 @@ ul {
     -webkit-transform: translate(110px, 40px);
             transform: translate(110px, 40px);
   }
-  .rewiews__rate {
+  .reviews__rate {
     display: block;
     margin: auto;
     padding-top: 160px;
+  }
+  .reviews__name {
+    font-family: Montserrat, Arial;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 4.64;
+    text-align: center;
+    color: #2e2520;
+  }
+  .reviews__text {
+    display: block;
+    width: 290px;
+    margin: auto;
+    margin-bottom: 40px;
+    font-family: Montserrat, Arial;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #2e2520;
+  }
+  .reviews__button_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reviews__button {
+    width: 50px;
+    height: 1px;
+    position: relative;
+    background: none;
+    border: none;
+  }
+  .reviews__button_svg {
+    position: absolute;
+    -webkit-transform: translateX(-18px);
+            transform: translateX(-18px);
+  }
+  .reviews__button_pages {
+    font-family: Montserrat, Arial;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: #ab816c;
   }
 }
 /*# sourceMappingURL=main.css.map */
