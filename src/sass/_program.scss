@@ -23,4 +23,41 @@
   .program__link {
     @extend .about_link;
   }
+
+  // Events-------------------------
+
+  .events {
+  }
+
+  .event__1 {
+    width: 150px;
+    height: 142px;
+
+    background-image: url(../images/mobile/program_bg@1x.png);
+    block-size: 150px, 142px;
+  }
+  .event__title {
+    padding-top: 49px;
+    margin-bottom: 13px;
+
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.28;
+    text-align: center;
+    color: $blackColor;
+  }
+
+  .event__text {
+    margin-bottom: 13px;
+    font-family: $secondaryFont;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: $blackColor;
+  }
+
+  .event__1_svg {
+    display: block;
+    margin: auto;
+  }
 }

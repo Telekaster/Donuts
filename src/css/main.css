@@ -350,5 +350,32 @@ ul {
   .program__item:not(:last-child) {
     margin-bottom: 10px;
   }
+  .event__1 {
+    width: 150px;
+    height: 142px;
+    background-image: url(../images/mobile/program_bg@1x.png);
+    block-size: 150px, 142px;
+  }
+  .event__title {
+    padding-top: 49px;
+    margin-bottom: 13px;
+    font-family: Caveat Brush, Arial;
+    font-size: 18px;
+    line-height: 1.28;
+    text-align: center;
+    color: #000000;
+  }
+  .event__text {
+    margin-bottom: 13px;
+    font-family: Montserrat, Arial;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: #000000;
+  }
+  .event__1_svg {
+    display: block;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
