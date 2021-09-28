@@ -16,6 +16,10 @@ const linkAbout = document.querySelector('#about_Link');
 
 const linkProgram = document.querySelector('#program_Link');
 
+const linkReviews = document.querySelector('#reviews_link');
+
+const linkContacts = document.querySelector('#contacts_link');
+
 const nextButton = document.querySelector('#button-next');
 
 const previousButton = document.querySelector('#button-previous');
@@ -25,6 +29,27 @@ const insertArea = document.querySelector('#user_area');
 const page = document.querySelector('#page');
 
 const last_page = document.querySelector('#last_page');
+
+
+closeButton.addEventListener('click', () => {
+    closeMobileMenu(menu, menuButton, body)
+});
+    
+linkAbout.addEventListener('click', () => {
+    closeMobileMenu(menu, menuButton, body)
+});
+
+linkProgram.addEventListener('click', () => {
+    closeMobileMenu(menu, menuButton, body)
+});
+
+linkReviews.addEventListener('click', () => {
+    closeMobileMenu(menu, menuButton, body)
+});
+
+linkContacts.addEventListener('click', () => {
+    closeMobileMenu(menu, menuButton, body)
+});
 
 
 
@@ -43,8 +68,8 @@ previousButton.addEventListener('click', () => {
 
 
 openMobileMenu(menu, menuButton, body);
-closeMobileMenu(menu, menuButton, closeButton, body, linkAbout);
-closeMobileMenu(menu, menuButton, closeButton, body, linkProgram);
+// closeMobileMenu(menu, menuButton, closeButton, body, linkAbout);
+// closeMobileMenu(menu, menuButton, closeButton, body, linkProgram);
 
 
 
