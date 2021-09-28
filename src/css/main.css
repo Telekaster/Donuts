@@ -470,15 +470,16 @@ ul {
     height: 110px;
     border-radius: 50%;
     position: absolute;
-    -webkit-transform: translate(110px, 40px);
-            transform: translate(110px, 40px);
+    -webkit-transform: translate(110px, -100px);
+            transform: translate(110px, -100px);
   }
   .reviews__rate {
     display: block;
     margin: auto;
-    padding-top: 160px;
+    padding-top: 50px;
   }
   .reviews__name {
+    margin-top: 110px;
     font-family: Montserrat, Arial;
     font-style: italic;
     font-weight: 500;
