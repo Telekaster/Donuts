@@ -42,9 +42,9 @@ previousButton.addEventListener('click', () => {
 
 
 
-// openMobileMenu(menu, menuButton, body);
-// closeMobileMenu(menu, menuButton, closeButton, body, linkAbout);
-// closeMobileMenu(menu, menuButton, closeButton, body, linkProgram);
+openMobileMenu(menu, menuButton, body);
+closeMobileMenu(menu, menuButton, closeButton, body, linkAbout);
+closeMobileMenu(menu, menuButton, closeButton, body, linkProgram);
 
 
 
