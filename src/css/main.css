@@ -465,6 +465,11 @@ ul {
     -webkit-transform: translate(129px, -13px);
             transform: translate(129px, -13px);
   }
+  .reviews__rate {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
   .reviews__photo {
     width: 110px;
     height: 110px;
@@ -473,10 +478,8 @@ ul {
     -webkit-transform: translate(110px, -100px);
             transform: translate(110px, -100px);
   }
-  .reviews__rate {
-    display: block;
-    margin: auto;
-    padding-top: 50px;
+  .user_area {
+    height: 350px;
   }
   .reviews__name {
     margin-top: 110px;
@@ -492,7 +495,6 @@ ul {
     display: block;
     width: 290px;
     margin: auto;
-    margin-bottom: 40px;
     font-family: Montserrat, Arial;
     font-size: 16px;
     line-height: 1.25;
