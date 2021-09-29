@@ -183,10 +183,6 @@ ul {
     border-radius: 25px;
     border: none;
     background: #ab816c;
-    font-family: Caveat Brush, Arial;
-    font-size: 18px;
-    line-height: 1.4;
-    color: #ffffff;
     -webkit-transition: scale linear;
     transition: scale linear;
   }
@@ -194,6 +190,14 @@ ul {
   .header__register_button:focus {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+  }
+  .header__register_button_text {
+    text-align: center;
+    padding-top: 5px;
+    font-family: Caveat Brush, Arial;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #ffffff;
   }
   .header_socials_backround {
     width: 290px;
@@ -324,7 +328,7 @@ ul {
     width: 290px;
     margin-bottom: -150px;
   }
-  .about_title, .program__title, .reviews__title {
+  .about_title, .program__title, .registration__title, .reviews__title {
     text-align: center;
     font-family: Caveat Brush, Arial;
     font-size: 24px;
@@ -479,7 +483,7 @@ ul {
             transform: translate(110px, -100px);
   }
   .user_area {
-    height: 350px;
+    height: 280px;
   }
   .reviews__name {
     margin-top: 110px;
@@ -502,6 +506,7 @@ ul {
     color: #2e2520;
   }
   .reviews__button_area {
+    margin-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -530,6 +535,63 @@ ul {
     line-height: 1.21;
     text-align: center;
     color: #ab816c;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .registration {
+    background-image: url(../images/mobile/rectangle_bg@1x.png);
+    margin: auto;
+    width: 290px;
+    height: 510px;
+    background-repeat: no-repeat;
+    background-size: 290px 510px;
+  }
+}
+
+@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
+  .registration {
+    background-image: url(../images/mobile/rectangle_bg@2x.png);
+  }
+}
+
+@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
+  .registration {
+    background-image: url(../images/mobile/rectangle_bg@4x.png);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .registration_area {
+    display: block;
+    padding-top: 30px;
+  }
+  .registration__text, .registration__text_price {
+    display: block;
+    padding-top: 11px;
+    text-align: center;
+    font-family: Montserrat, Arial;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #2e2520;
+  }
+  .registration__text_price {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  .registration__text_underline {
+    width: 250px;
+    margin: auto;
+    margin-bottom: 11px;
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  }
+  .registration_form_title {
+    font-family: Montserrat, Arial;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #2e2520;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+@media screen and (max-width: 769px) {
+  .registration {
+    background-image: url(../images/mobile/rectangle_bg@1x.png);
+    margin: auto;
+    width: 290px;
+    height: 510px;
+    background-repeat: no-repeat;
+    background-size: 290px 510px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/rectangle_bg@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../images/mobile/rectangle_bg@4x.png);
+    }
+  }
+
+  .registration_area {
+    display: block;
+    padding-top: 30px;
+  }
+
+  .registration__title {
+    @extend .program__title;
+  }
+
+  .registration__text {
+    display: block;
+    padding-top: 11px;
+    text-align: center;
+
+    font-family: $secondaryFont;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    color: $mainColor;
+  }
+
+  .registration__text_price {
+    @extend .registration__text;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .registration__text_underline {
+    width: 250px;
+    margin: auto;
+    margin-bottom: 11px;
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  }
+
+  .registration_form_title {
+    font-family: $secondaryFont;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: $mainColor;
+  }
+}
