@@ -564,7 +564,7 @@ ul {
 @media screen and (max-width: 769px) {
   .registration_area {
     display: block;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .registration__text, .registration__text_price {
     display: block;
