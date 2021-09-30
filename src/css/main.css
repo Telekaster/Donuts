@@ -566,7 +566,7 @@ ul {
     display: block;
     padding-top: 20px;
   }
-  .registration__text, .registration__text_price {
+  .registration__text, .registration__text_price, .contact__Text {
     display: block;
     padding-top: 11px;
     text-align: center;
@@ -622,11 +622,32 @@ ul {
     border-radius: 25px;
     border: none;
     background: #ab816c;
+    font-family: Caveat Brush;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
   }
   .registration__form_button:hover,
   .registration__form_button:focus {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .contact__title {
+    font-family: Caveat Brush, Arial;
+    font-size: 24px;
+    line-height: 2.1;
+    text-align: center;
+    color: #2e2520;
+  }
+  .contact__Text {
+    padding-top: 0px;
+    padding-bottom: 22px;
   }
 }
 /*# sourceMappingURL=main.css.map */
