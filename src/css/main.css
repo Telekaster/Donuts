@@ -594,14 +594,15 @@ ul {
     color: #2e2520;
   }
   .registration__form {
-    display: block;
     margin: auto;
     margin-top: 17px;
+    margin-bottom: 25px;
   }
   .registration__form_input {
     display: block;
     width: 240px;
     margin: auto;
+    margin-bottom: 25px;
     border: none;
     border-bottom: 1px solid #ab816c;
     font-family: Montserrat, Arial;
@@ -609,11 +610,22 @@ ul {
     line-height: 1.25;
     color: rgba(171, 129, 108, 0.5);
   }
-  .registration__form_input:not(:last-child) {
-    margin-bottom: 25px;
-  }
   input::-webkit-input-placeholder {
     color: rgba(171, 129, 108, 0.5);
+  }
+  .registration__form_button {
+    display: block;
+    margin: auto;
+    width: 145px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background: #ab816c;
+  }
+  .registration__form_button:hover,
+  .registration__form_button:focus {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 /*# sourceMappingURL=main.css.map */
