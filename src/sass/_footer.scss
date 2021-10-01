@@ -1,0 +1,27 @@
+@media screen and (max-width: 769px) {
+  .footer {
+    width: 294px;
+    margin: auto;
+    margin-top: 142px;
+  }
+
+  .footer__image {
+    background-image: url(../images/mobile/flour@1x.png);
+    width: 113px;
+    height: 99px;
+
+    position: absolute;
+    transform: translate(170%, 37%);
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/flour@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../images/mobile/flour@4x.png);
+    }
+  }
+}

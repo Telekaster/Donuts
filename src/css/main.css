@@ -676,4 +676,34 @@ ul {
     margin-top: 37px;
   }
 }
+
+@media screen and (max-width: 769px) {
+  .footer {
+    width: 294px;
+    margin: auto;
+    margin-top: 142px;
+  }
+  .footer__image {
+    background-image: url(../images/mobile/flour@1x.png);
+    width: 113px;
+    height: 99px;
+    position: absolute;
+    -webkit-transform: translate(170%, 37%);
+            transform: translate(170%, 37%);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
+  .footer__image {
+    background-image: url(../images/mobile/flour@2x.png);
+  }
+}
+
+@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
+  .footer__image {
+    background-image: url(../images/mobile/flour@4x.png);
+  }
+}
 /*# sourceMappingURL=main.css.map */
