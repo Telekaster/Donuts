@@ -2,7 +2,34 @@ import openMobileMenu from "./mobile-menu_open";
 import closeMobileMenu from './mobile-menu_closed';
 import getReviewMarkupAcc from './reviews/getReviewMarkupAcc';
 import getReviewMarkupDec from './reviews/getReviewMarkupDec';
+import sendRegistration from './sendRegistration';
 
+
+
+// Registration form_______________________________________________
+
+const name = document.querySelector('#name');
+name.addEventListener('input', () => {
+});
+
+const phone = document.querySelector('#tel');
+phone.addEventListener('input', () => {
+});
+
+const mail = document.querySelector('#mail');
+
+mail.addEventListener('input', () => {
+});
+
+const registerButton = document.querySelector('.registration__form_button');
+
+registerButton.addEventListener('click', () => {
+    sendRegistration(name, phone, mail);
+});
+
+
+
+// Mobile menu_______________________________________________________
 
 const menuButton = document.querySelector('.header__menu_button');
 
@@ -31,6 +58,7 @@ const page = document.querySelector('#page');
 const last_page = document.querySelector('#last_page');
 
 
+
 closeButton.addEventListener('click', () => {
     closeMobileMenu(menu, menuButton, body)
 });
@@ -52,6 +80,10 @@ linkContacts.addEventListener('click', () => {
 });
 
 
+openMobileMenu(menu, menuButton, body);
+
+
+// Reviews area__________________________________________
 
 nextButton.addEventListener('click', () => {
 
@@ -67,9 +99,7 @@ previousButton.addEventListener('click', () => {
 
 
 
-openMobileMenu(menu, menuButton, body);
-// closeMobileMenu(menu, menuButton, closeButton, body, linkAbout);
-// closeMobileMenu(menu, menuButton, closeButton, body, linkProgram);
+
 
 
 
