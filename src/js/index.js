@@ -3,23 +3,33 @@ import closeMobileMenu from './mobile-menu_closed';
 import getReviewMarkupAcc from './reviews/getReviewMarkupAcc';
 import getReviewMarkupDec from './reviews/getReviewMarkupDec';
 import sendRegistration from './sendRegistration';
+import sendContactForm from './sendContact';
 
 
+// Contact form_______________________________________________
+
+const contactMail = document.querySelector('#mailContacts');
+contactMail.addEventListener('input', () => { });
+
+const contactText = document.querySelector('#question');
+contactText.addEventListener('input', () => { });
+
+const contactSendButton = document.querySelector('#contact-button');
+contactSendButton.addEventListener('click', (() => {
+    sendContactForm(contactMail, contactText);
+}))
+ 
 
 // Registration form_______________________________________________
 
 const name = document.querySelector('#name');
-name.addEventListener('input', () => {
-});
+name.addEventListener('input', () => { });
 
 const phone = document.querySelector('#tel');
-phone.addEventListener('input', () => {
-});
+phone.addEventListener('input', () => { });
 
 const mail = document.querySelector('#mail');
-
-mail.addEventListener('input', () => {
-});
+mail.addEventListener('input', () => { });
 
 const registerButton = document.querySelector('.registration__form_button');
 
