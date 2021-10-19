@@ -1,4 +1,4 @@
-@media screen and (max-width: 769px) {
+@media screen and (max-width: map-get($breakpoints, mobile)) {
   .footer {
     width: 294px;
     margin: auto;

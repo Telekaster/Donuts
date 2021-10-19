@@ -6,3 +6,9 @@ $brandColor: #ab816c;
 $hoverColor: #876655;
 $whiteColor: #ffffff;
 $blackColor: #000000;
+
+$breakpoints: (
+  mobile: 768px,
+  tablet: 769px,
+  desktop: 1280px,
+);

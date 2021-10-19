@@ -1,4 +1,4 @@
-@media screen and (max-width: 769px) {
+@media screen and (max-width: map-get($breakpoints, mobile)) {
   .program {
     @extend .about;
     margin-bottom: 60px;

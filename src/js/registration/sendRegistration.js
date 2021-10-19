@@ -1,12 +1,10 @@
 export default function sendRegistration(name, phone, mail) {
 
-    console.log('click');
-
     const registeredPerson = {
-        author: name.value.toLowerCase(),
-        content: `tel:${phone.value}, mail:${mail.value}`,
+        author: name.toLowerCase(),
+        content: `tel:${phone}, mail:${mail}`,
     };
-    
+
     console.log(registeredPerson);
 
     const url = 'https://jsonplaceholder.typicode.com/posts';

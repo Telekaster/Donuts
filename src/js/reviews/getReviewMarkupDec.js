@@ -1,10 +1,6 @@
 export default function getReviewMarkupAcc(page, previousButton, insertArea) {
 
-    console.log('click');
-
    const id = Number(page.textContent);
-
-
 
     if (id === 1) {
 
