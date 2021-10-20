@@ -47,6 +47,7 @@ ol[class] {
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  color: black;
 }
 
 /* Упрощаем работу с изображениями */
@@ -69,37 +70,24 @@ select {
   font: inherit;
 }
 
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+@media screen and (min-width: 769px) {
+  .container, .header__section {
+    width: 634px;
+    margin: auto;
   }
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-ul {
-  list-style: none;
+@media screen and (min-width: 769px) {
+  .header {
+    margin: auto;
+    background-image: url(../images/tablet/header_bg_tablet@1x.png);
+    width: 769px;
+    height: 622px;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    min-width: 320px;
-    max-width: 768px;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 769px) {
   .header__section {
     width: 320px;
     height: 460px;
@@ -112,22 +100,25 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .header__section {
     background-image: url(../images/mobile/header_bg@2x.png);
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 768px) and (min-resolution: 3dppx) {
   .header__section {
     background-image: url(../images/mobile/header_bg@4x.png);
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .header__donuts_img {
     position: absolute;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header__logo_link {
     display: block;
     width: 96px;
@@ -135,15 +126,24 @@ ul {
     margin: auto;
     padding-top: 7px;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header__logo_svg {
     width: 96px;
     height: 43px;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header__menu_svg {
     width: 30px;
     height: 16px;
     fill: #2e2520;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header__menu_button {
     position: absolute;
     -webkit-transform: translateX(259px);
@@ -152,12 +152,18 @@ ul {
     background: none;
     border: none;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header__title_section {
     margin-top: 33px;
     position: absolute;
     -webkit-transform: translateX(48px);
             transform: translateX(48px);
   }
+}
+
+@media screen and (max-width: 768px) {
   .header__title_hero {
     font-family: Caveat Brush, Arial;
     font-size: 30px;
@@ -165,6 +171,9 @@ ul {
     text-align: center;
     color: #2e2520;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header__title_text {
     margin-top: 3px;
     font-family: Montserrat, Arial;
@@ -174,6 +183,9 @@ ul {
     text-align: center;
     color: #2e2520;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header__register_button {
     display: block;
     margin: auto;
@@ -187,11 +199,15 @@ ul {
     -webkit-transition: scale linear;
     transition: scale linear;
   }
-  .header__register_button:hover,
-  .header__register_button:focus {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
+}
+
+.header__register_button:hover,
+.header__register_button:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
   .header__register_button_text {
     text-align: center;
     padding-top: 6.5px;
@@ -200,6 +216,9 @@ ul {
     line-height: 1.4;
     color: #ffffff;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header_socials_backround {
     width: 290px;
     height: 310px;
@@ -209,23 +228,26 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .header_socials_backround {
     background-image: url(../images/mobile/lanch-box@2x.png);
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 768px) and (min-resolution: 3dppx) {
   .header_socials_backround {
     background-image: url(../images/mobile/lanch-box@4x.png);
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .header_socials {
     width: 61px;
     margin-left: 129px;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header_socials_list {
     width: 61px;
     display: -webkit-box;
@@ -235,21 +257,26 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+@media screen and (max-width: 768px) {
   .header_socials_svg {
     fill: #2e2520;
     -webkit-transition: fill 500ms linear;
     transition: fill 500ms linear;
   }
-  .header_socials_svg:hover,
-  .header_socials_svg:focus {
-    fill: #876655;
-  }
-  .hero__main_pic {
-    pointer-events: all;
-  }
 }
 
-@media screen and (max-width: 769px) {
+.header_socials_svg:hover,
+.header_socials_svg:focus {
+  fill: #876655;
+}
+
+.hero__main_pic {
+  pointer-events: all;
+}
+
+@media screen and (max-width: 768px) {
   .menu_is-hidden {
     display: none;
   }
@@ -322,7 +349,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .about, .program {
     margin: auto;
     margin-top: 150px;
@@ -354,7 +381,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .program {
     margin-bottom: 60px;
   }
@@ -377,19 +404,19 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .event__1, .event__2 {
     background-image: url(../images/mobile/program_bg@2x.png);
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 768px) and (min-resolution: 3dppx) {
   .event__1, .event__2 {
     background-image: url(../images/mobile/program_bg@4x.png);
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .event__2 {
     margin-top: 57px;
   }
@@ -441,7 +468,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .long_background {
     background-image: url(../images/mobile/reviews_bg@1x.png);
     margin: auto;
@@ -452,19 +479,19 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .long_background {
     background-image: url(../images/mobile/reviews_bg@2x.png);
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 768px) and (min-resolution: 3dppx) {
   .long_background {
     background-image: url(../images/mobile/reviews_bg@4x.png);
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .reviews__title {
     position: absolute;
     -webkit-transform: translate(129px, -13px);
@@ -539,7 +566,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .registration {
     background-image: url(../images/mobile/rectangle_bg@1x.png);
     margin: auto;
@@ -550,19 +577,19 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .registration {
     background-image: url(../images/mobile/rectangle_bg@2x.png);
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 768px) and (min-resolution: 3dppx) {
   .registration {
     background-image: url(../images/mobile/rectangle_bg@4x.png);
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .registration_area {
     display: block;
     padding-top: 20px;
@@ -639,7 +666,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .contact__title {
     font-family: Caveat Brush, Arial;
     font-size: 24px;
@@ -678,7 +705,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .footer {
     width: 294px;
     margin: auto;
@@ -690,19 +717,19 @@ ul {
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .footer {
     background-image: url(../images/mobile/flour@2x.png);
   }
 }
 
-@media screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 769px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 768px) and (min-resolution: 3dppx) {
   .footer {
     background-image: url(../images/mobile/flour@4x.png);
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .footer__socials_list {
     display: -webkit-box;
     display: -ms-flexbox;

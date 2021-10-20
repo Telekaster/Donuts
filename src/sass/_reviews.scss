@@ -1,4 +1,4 @@
-@media screen and (max-width: map-get($breakpoints, mobile)) {
+@media screen and (max-width: 768px) {
   .long_background {
     background-image: url(../images/mobile/reviews_bg@1x.png);
     margin: auto;

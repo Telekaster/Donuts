@@ -1,5 +1,17 @@
-@media screen and (max-width: map-get($breakpoints, mobile)) {
-  .header__section {
+.header {
+  @media screen and (min-width: 769px) {
+    margin: auto;
+    background-image: url(../images/tablet/header_bg_tablet@1x.png);
+    width: 769px;
+    height: 622px;
+    background-repeat: no-repeat;
+  }
+}
+
+.header__section {
+  @extend .container;
+
+  @media screen and (max-width: 768px) {
     width: 320px;
     height: 460px;
 
@@ -19,54 +31,70 @@
       background-image: url(../images/mobile/header_bg@4x.png);
     }
   }
+}
 
-  .header__donuts_img {
+.header__donuts_img {
+  @media screen and (max-width: 768px) {
     position: absolute;
   }
+}
 
-  .header__logo_link {
+.header__logo_link {
+  @media screen and (max-width: 768px) {
     display: block;
     width: 96px;
     height: 43px;
     margin: auto;
     padding-top: 7px;
   }
+}
 
-  .header__logo_svg {
+.header__logo_svg {
+  @media screen and (max-width: 768px) {
     width: 96px;
     height: 43px;
   }
+}
 
-  .header__menu_svg {
+.header__menu_svg {
+  @media screen and (max-width: 768px) {
     width: 30px;
     height: 16px;
     fill: $mainColor;
   }
+}
 
-  .header__menu_button {
+.header__menu_button {
+  @media screen and (max-width: 768px) {
     position: absolute;
     transform: translateX(259px);
     top: 15px;
     background: none;
     border: none;
   }
+}
 
-  .header__title_section {
+.header__title_section {
+  @media screen and (max-width: 768px) {
     margin-top: 33px;
 
     position: absolute;
     transform: translateX(48px);
   }
+}
 
-  .header__title_hero {
+.header__title_hero {
+  @media screen and (max-width: 768px) {
     font-family: $mainFont;
     font-size: 30px;
     line-height: 1.27;
     text-align: center;
     color: $mainColor;
   }
+}
 
-  .header__title_text {
+.header__title_text {
+  @media screen and (max-width: 768px) {
     margin-top: 3px;
 
     font-family: $secondaryFont;
@@ -76,8 +104,10 @@
     text-align: center;
     color: $mainColor;
   }
+}
 
-  .header__register_button {
+.header__register_button {
+  @media screen and (max-width: 768px) {
     display: block;
     margin: auto;
     margin-top: 169px;
@@ -90,13 +120,15 @@
 
     transition: scale linear;
   }
+}
 
-  .header__register_button:hover,
-  .header__register_button:focus {
-    transform: scale(0.9);
-  }
+.header__register_button:hover,
+.header__register_button:focus {
+  transform: scale(0.9);
+}
 
-  .header__register_button_text {
+.header__register_button_text {
+  @media screen and (max-width: 768px) {
     text-align: center;
     padding-top: 6.5px;
     font-family: $mainFont;
@@ -104,8 +136,10 @@
     line-height: 1.4;
     color: $whiteColor;
   }
+}
 
-  .header_socials_backround {
+.header_socials_backround {
+  @media screen and (max-width: 768px) {
     width: 290px;
     height: 310px;
     background-image: url(../images/mobile/lanch-box@1x.png);
@@ -120,30 +154,38 @@
       background-image: url(../images/mobile/lanch-box@4x.png);
     }
   }
+}
 
-  .header_socials {
+.header_socials {
+  @media screen and (max-width: 768px) {
     width: 61px;
     margin-left: 129px;
   }
+}
 
-  .header_socials_list {
+.header_socials_list {
+  @media screen and (max-width: 768px) {
     width: 61px;
     display: flex;
     justify-content: space-between;
   }
+}
 
-  .header_socials_svg {
+.header_socials_svg {
+  @media screen and (max-width: 768px) {
     fill: $mainColor;
 
     transition: fill 500ms linear;
   }
-
-  .header_socials_svg:hover,
-  .header_socials_svg:focus {
-    fill: $hoverColor;
-  }
-
-  .hero__main_pic {
-    pointer-events: all;
-  }
 }
+
+.header_socials_svg:hover,
+.header_socials_svg:focus {
+  fill: $hoverColor;
+}
+
+.hero__main_pic {
+  pointer-events: all;
+}
+
+// Tablet______________________________

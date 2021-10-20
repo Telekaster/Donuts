@@ -1,4 +1,4 @@
-@media screen and (max-width: map-get($breakpoints, mobile)) {
+@media screen and (max-width: 768px) {
   .registration {
     background-image: url(../images/mobile/rectangle_bg@1x.png);
     margin: auto;

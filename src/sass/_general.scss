@@ -1,7 +1,6 @@
-@media screen and (max-width: map-get($breakpoints, mobile)) {
-  body {
-    min-width: 320px;
-    max-width: 768px;
-    position: relative;
+.container {
+  @media screen and (min-width: 769px) {
+    width: 634px;
+    margin: auto;
   }
 }
