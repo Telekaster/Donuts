@@ -17,6 +17,9 @@ export default function refs() {
         phone: document.querySelector('#tel'),
         mail: document.querySelector('#mail'),
         registerButton: document.querySelector('.registration__form_button'),
+        contactMail: document.querySelector('#mailContacts'),
+        contactText: document.querySelector('#question'),
+        contactSendButton: document.querySelector('#contact-button'),
     };
 
     return selectors;

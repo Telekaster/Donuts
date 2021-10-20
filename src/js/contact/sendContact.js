@@ -1,7 +1,7 @@
 export default function sendContactForm(mail, text) {
 
     const question = {
-        author: mail.value.toLowerCase(),
+        author: mail.toLowerCase(),
         content: text.value,
     };
 
