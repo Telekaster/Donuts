@@ -62,9 +62,9 @@
 
 .header__logo_link {
   display: block;
+  width: 96px;
+  height: 43px;
   @media screen and (max-width: 768px) {
-    width: 96px;
-    height: 43px;
     margin: auto;
     padding-top: 7px;
   }
@@ -91,6 +91,7 @@
   position: absolute;
   background: none;
   border: none;
+  cursor: pointer;
 
   @media screen and (max-width: 768px) {
     transform: translateX(259px);
