@@ -1,35 +1,47 @@
-@media screen and (max-width: 768px) {
-  .about {
-    margin: auto;
-    margin-top: 150px;
-    width: 290px;
-    margin-bottom: -150px;
+.about {
+  @extend .container;
+  margin: auto;
+  margin-top: 150px;
+  width: 290px;
+  margin-bottom: -150px;
+}
+.about_section {
+  @media screen and (min-width: 769px) {
+    width: 336px;
+    margin: 0px;
+    text-align: left;
+    position: absolute;
+    transform: translate(127px, -394px);
   }
+}
 
-  .about_title {
-    text-align: center;
-    font-family: $mainFont;
-    font-size: 24px;
-    line-height: 2.7;
-    color: $mainColor;
+.about_title {
+  text-align: center;
+  font-family: $mainFont;
+  font-size: 24px;
+  line-height: 2;
+  color: $mainColor;
+  @media screen and (min-width: 769px) {
+    text-align: left;
+    margin-bottom: 0px;
   }
+}
 
-  .about_text_1 {
-    font-family: $secondaryFont;
-    font-size: 16px;
-    line-height: 1.25;
-    color: $mainColor;
-  }
-  .about_text_2 {
-    @extend .about_text_1;
-    display: block;
-    margin-top: 20px;
-  }
+.about_text_1 {
+  font-family: $secondaryFont;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $mainColor;
+}
+.about_text_2 {
+  @extend .about_text_1;
+  display: block;
+  margin-top: 20px;
+}
 
-  .about_link {
-    font-family: $mainFont;
-    font-size: 18px;
-    line-height: 3.61;
-    color: $brandColor;
-  }
+.about_link {
+  font-family: $mainFont;
+  font-size: 18px;
+  line-height: 3.61;
+  color: $brandColor;
 }

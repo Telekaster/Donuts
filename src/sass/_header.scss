@@ -1,6 +1,7 @@
 .header {
   @media screen and (min-width: 769px) {
     margin: auto;
+    // margin-bottom: 300px;
     background-image: url(../images/tablet/header_bg_tablet@1x.png);
     width: 769px;
     height: 622px;
@@ -222,4 +223,11 @@
   pointer-events: all;
 }
 
-// Tablet______________________________
+.about_picture {
+  display: none;
+  @media screen and (min-width: 769px) {
+    display: block;
+    position: absolute;
+    transform: translate(2px, 80px);
+  }
+}

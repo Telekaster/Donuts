@@ -15,7 +15,7 @@
   }
 
   .reviews__title {
-    @extend .about_title;
+    // @extend .about_title;
     position: absolute;
     transform: translate(129px, -13px);
   }
