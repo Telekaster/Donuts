@@ -497,18 +497,27 @@ select {
 }
 
 .program {
-  margin-top: 270px;
+  margin: auto;
+  margin-top: 152px;
   margin-bottom: 60px;
+  width: 320px;
+  height: 500px;
 }
 
 @media screen and (min-width: 769px) {
   .program {
+    margin-top: 270px;
+    width: 769px;
     text-align: left;
   }
 }
 
-.program_text_section {
-  width: 320px;
+@media screen and (min-width: 769px) {
+  .program_text_section {
+    width: 320px;
+    -webkit-transform: translate(67px, 0px);
+            transform: translate(67px, 0px);
+  }
 }
 
 .program__text {
@@ -522,13 +531,14 @@ select {
 
 .events__section {
   margin-top: 40px;
+  position: static;
 }
 
 @media screen and (min-width: 769px) {
   .events__section {
     position: absolute;
-    -webkit-transform: translate(325px, -421px);
-            transform: translate(325px, -421px);
+    -webkit-transform: translate(405px, -421px);
+            transform: translate(405px, -421px);
   }
 }
 
