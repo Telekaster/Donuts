@@ -71,7 +71,7 @@ select {
 }
 
 @media screen and (min-width: 769px) {
-  .container, .header__section, .about, .program {
+  .container, .header__section, .about, .program, .reviews {
     width: 634px;
     margin: auto;
   }
@@ -462,7 +462,7 @@ select {
   }
 }
 
-.about_title, .program__title {
+.about_title, .program__title, .reviews__title {
   text-align: center;
   font-family: Caveat Brush, Arial;
   font-size: 24px;
@@ -471,7 +471,7 @@ select {
 }
 
 @media screen and (min-width: 769px) {
-  .about_title, .program__title {
+  .about_title, .program__title, .reviews__title {
     text-align: left;
     margin-bottom: 0px;
   }
@@ -623,6 +623,7 @@ select {
 .long_background {
   background-image: url(../images/mobile/reviews_bg@1x.png);
   margin: auto;
+  margin-top: 345px;
   width: 324px;
   height: 1215px;
   background-repeat: no-repeat;
@@ -645,7 +646,7 @@ select {
   .long_background {
     background-image: url(../images/tablet/long_background@1x.png);
     width: 773px;
-    margin-top: -63px;
+    margin-top: -150px;
   }
 }
 
@@ -663,14 +664,29 @@ select {
 
 .reviews__title {
   position: absolute;
-  -webkit-transform: translate(129px, -13px);
-          transform: translate(129px, -13px);
+  -webkit-transform: translate(129px, -5px);
+          transform: translate(129px, -5px);
+}
+
+@media screen and (min-width: 769px) {
+  .reviews__title {
+    -webkit-transform: translate(280px, 25px);
+            transform: translate(280px, 25px);
+  }
 }
 
 .reviews__rate {
   display: block;
   margin: auto;
   padding-top: 50px;
+}
+
+@media screen and (min-width: 769px) {
+  .reviews__rate {
+    position: absolute;
+    -webkit-transform: translate(245px, 235px);
+            transform: translate(245px, 235px);
+  }
 }
 
 .reviews__photo {
@@ -680,6 +696,27 @@ select {
   position: absolute;
   -webkit-transform: translate(110px, -100px);
           transform: translate(110px, -100px);
+}
+
+@media screen and (min-width: 769px) {
+  .reviews__photo {
+    display: none;
+  }
+}
+
+.reviews__photo_tablet {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .reviews__photo_tablet {
+    display: block;
+    width: 186px;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transform: translate(220px, 90px);
+            transform: translate(220px, 90px);
+  }
 }
 
 .user_area {
@@ -697,6 +734,14 @@ select {
   color: #2e2520;
 }
 
+@media screen and (min-width: 769px) {
+  .reviews__name {
+    position: absolute;
+    -webkit-transform: translate(295px, 180px);
+            transform: translate(295px, 180px);
+  }
+}
+
 .reviews__text {
   display: block;
   width: 290px;
@@ -706,6 +751,14 @@ select {
   line-height: 1.25;
   text-align: center;
   color: #2e2520;
+}
+
+@media screen and (min-width: 769px) {
+  .reviews__text {
+    padding-top: 340px;
+    width: 626px;
+    text-align: center;
+  }
 }
 
 .reviews__button_area {
@@ -719,6 +772,12 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 769px) {
+  .reviews__button_area {
+    margin-top: 200px;
+  }
 }
 
 .reviews__button {

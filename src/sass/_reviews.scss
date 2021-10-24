@@ -1,6 +1,7 @@
 .long_background {
   background-image: url(../images/mobile/reviews_bg@1x.png);
   margin: auto;
+  margin-top: 345px;
   width: 324px;
   height: 1215px;
   background-repeat: no-repeat;
@@ -15,7 +16,7 @@
   @media screen and (min-width: 769px) {
     background-image: url(../images/tablet/long_background@1x.png);
     width: 773px;
-    margin-top: -63px;
+    margin-top: -150px;
     @media (min-resolution: 2dppx) {
       background-image: url(../images/tablet/long_background@2x.png);
     }
@@ -25,25 +26,49 @@
   }
 }
 
+.reviews {
+  @extend .container;
+}
+
 .reviews__title {
-  // @extend .about_title;
+  @extend .about_title;
   position: absolute;
-  transform: translate(129px, -13px);
+  transform: translate(129px, -5px);
+  @media screen and (min-width: 769px) {
+    transform: translate(280px, 25px);
+  }
 }
 
 .reviews__rate {
   display: block;
   margin: auto;
   padding-top: 50px;
+  @media screen and(min-width:769px) {
+    position: absolute;
+    transform: translate(245px, 235px);
+  }
 }
 
 .reviews__photo {
   width: 110px;
   height: 110px;
   border-radius: 50%;
-
   position: absolute;
   transform: translate(110px, -100px);
+  @media screen and(min-width:769px) {
+    display: none;
+  }
+}
+
+.reviews__photo_tablet {
+  display: none;
+  @media screen and (min-width: 769px) {
+    display: block;
+    width: 186px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(220px, 90px);
+  }
 }
 
 .user_area {
@@ -60,19 +85,28 @@
   line-height: 4.64;
   text-align: center;
   color: $mainColor;
+  @media screen and(min-width:769px) {
+    position: absolute;
+    transform: translate(295px, 180px);
+  }
 }
 
 .reviews__text {
   display: block;
   width: 290px;
   margin: auto;
-  // margin-bottom: 40px;
 
   font-family: $secondaryFont;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
   color: $mainColor;
+
+  @media screen and (min-width: 769px) {
+    padding-top: 340px;
+    width: 626px;
+    text-align: center;
+  }
 }
 
 .reviews__button_area {
@@ -80,6 +114,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 769px) {
+    margin-top: 200px;
+  }
 }
 
 .reviews__button {
