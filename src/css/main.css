@@ -444,7 +444,7 @@ select {
   color: #876655;
 }
 
-.about, .program {
+.about {
   margin: auto;
   margin-top: 150px;
   width: 290px;
@@ -462,7 +462,7 @@ select {
   }
 }
 
-.about_title {
+.about_title, .program__title {
   text-align: center;
   font-family: Caveat Brush, Arial;
   font-size: 24px;
@@ -471,13 +471,13 @@ select {
 }
 
 @media screen and (min-width: 769px) {
-  .about_title {
+  .about_title, .program__title {
     text-align: left;
     margin-bottom: 0px;
   }
 }
 
-.about_text_1, .about_text_2 {
+.about_text_1, .about_text_2, .program__text, .program__item {
   font-family: Montserrat, Arial;
   font-size: 16px;
   line-height: 1.25;
@@ -489,7 +489,7 @@ select {
   margin-top: 20px;
 }
 
-.about_link {
+.about_link, .program__link {
   font-family: Caveat Brush, Arial;
   font-size: 18px;
   line-height: 3.61;
@@ -499,6 +499,16 @@ select {
 .program {
   margin-top: 270px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 769px) {
+  .program {
+    text-align: left;
+  }
+}
+
+.program_text_section {
+  width: 320px;
 }
 
 .program__text {
@@ -512,6 +522,14 @@ select {
 
 .events__section {
   margin-top: 40px;
+}
+
+@media screen and (min-width: 769px) {
+  .events__section {
+    position: absolute;
+    -webkit-transform: translate(325px, -421px);
+            transform: translate(325px, -421px);
+  }
 }
 
 .event__1, .event__2 {
