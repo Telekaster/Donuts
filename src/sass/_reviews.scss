@@ -109,6 +109,42 @@
   }
 }
 
+.prew__user {
+  display: none;
+  @media screen and (min-width: 769px) {
+    display: block;
+    width: 140px;
+    position: absolute;
+    transform: translate(41px, -214px);
+  }
+}
+
+.next__user {
+  @extend .prew__user;
+  transform: translate(441px, -214px);
+}
+
+.prew__user_photo {
+  width: 115;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 6px;
+}
+.prew__user_icon {
+  width: 136px;
+  height: 24px;
+}
+
+.prew__user_name {
+  font-family: $secondaryFont;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: $mainColor;
+}
+
 .reviews__button_area {
   margin-bottom: 30px;
   display: flex;
@@ -125,6 +161,7 @@
   position: relative;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .reviews__button_svg {
