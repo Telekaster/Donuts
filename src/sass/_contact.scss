@@ -1,44 +1,46 @@
-@media screen and (max-width: 768px) {
-  .contact__title {
-    font-family: $mainFont;
-    font-size: 24px;
-    line-height: 2.1;
-    text-align: center;
-    color: $mainColor;
-  }
+.contact_section {
+  @extend .container;
+  margin: auto;
+}
 
-  .contact__Text {
-    padding-top: 0px;
-    padding-bottom: 22px;
-    font-family: $secondaryFont;
-    font-size: 16px;
-    line-height: 2.1;
-    text-align: center;
-    color: $mainColor;
-  }
+.contact__title {
+  font-family: $mainFont;
+  font-size: 24px;
+  line-height: 2.1;
+  text-align: center;
+  color: $mainColor;
+}
 
-  .contact__form {
-    width: 270px;
-    margin: auto;
-  }
+.contact__Text {
+  padding-top: 0px;
+  padding-bottom: 22px;
+  font-family: $secondaryFont;
+  font-size: 16px;
+  line-height: 2.1;
+  text-align: center;
+  color: $mainColor;
+}
 
-  .contact__form_input {
-    display: block;
-    width: 240px;
-    height: 20px;
-    margin: auto;
-    margin-bottom: 25px;
+.contact__form {
+  width: 270px;
+  margin: auto;
+}
 
-    border: none;
-    border-bottom: 1px solid $brandColor;
+.contact__form_input {
+  display: block;
+  width: 240px;
+  height: 20px;
+  margin: auto;
+  margin-bottom: 25px;
 
-    font-family: $secondaryFont;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(171, 129, 108, 0.5);
-  }
+  border: none;
+  border-bottom: 1px solid $brandColor;
 
-  .registration__form_button {
-    margin-top: 37px;
-  }
+  font-family: $secondaryFont;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
+}
+.contact__form_button {
+  // margin-top: 37px;
 }

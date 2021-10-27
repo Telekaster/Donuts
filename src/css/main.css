@@ -71,7 +71,7 @@ select {
 }
 
 @media screen and (min-width: 769px) {
-  .container, .header__section, .about, .program, .reviews, .registration {
+  .container, .header__section, .about, .program, .reviews, .registration, .contact_section {
     width: 634px;
     margin: auto;
   }
@@ -817,7 +817,8 @@ select {
 
 @media screen and (min-width: 769px) {
   .reviews__button_area {
-    margin-top: 200px;
+    margin-top: 180px;
+    margin-bottom: 30px;
   }
 }
 
@@ -848,24 +849,57 @@ select {
   margin: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
   .registration {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .registration_bg {
     background-image: url(../images/mobile/rectangle_bg@1x.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 290px 510px;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    margin-top: -50px;
   }
 }
 
 @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 2dppx) {
-  .registration {
+  .registration_bg {
     background-image: url(../images/mobile/rectangle_bg@2x.png);
   }
 }
 
 @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 768px) and (min-resolution: 3dppx) {
-  .registration {
+  .registration_bg {
     background-image: url(../images/mobile/rectangle_bg@4x.png);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .registration_bg {
+    background: url(../images/tablet/registration_donut@1x.png) no-repeat, url(../images/tablet/registration_stribes@1x.png) no-repeat;
+    background-size: 196px 201px, 191px 345px;
+    background-position: 0 0, 545px 100px;
+  }
+}
+
+@media screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .registration_bg {
+    background: url(../images/tablet/registration_donut@2x.png) no-repeat, url(../images/tablet/registration_stribes@2x.png) no-repeat;
+    background-size: 196px 201px, 191px 345px;
+    background-position: 0 0, 545px 100px;
+  }
+}
+
+@media screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 769px) and (min-resolution: 3dppx) {
+  .registration_bg {
+    background: url(../images/tablet/registration_donut@4x.png) no-repeat, url(../images/tablet/registration_stribes@4x.png) no-repeat;
+    background-size: 196px 201px, 191px 345px;
+    background-position: 0 0, 545px 100px;
   }
 }
 
@@ -1015,9 +1049,7 @@ input::-webkit-input-placeholder {
   border-radius: 25px;
   border: none;
   background: #ab816c;
-  font-family: Caveat Brush;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Caveat Brush, Arial;
   font-size: 18px;
   line-height: 1;
   text-align: center;
@@ -1026,8 +1058,9 @@ input::-webkit-input-placeholder {
 
 @media screen and (min-width: 769px) {
   .registration__form_button {
-    margin-top: 98px;
+    margin-top: 95px;
     margin-left: 25px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1037,43 +1070,45 @@ input::-webkit-input-placeholder {
           transform: scale(0.9);
 }
 
-@media screen and (max-width: 768px) {
-  .contact__title {
-    font-family: Caveat Brush, Arial;
-    font-size: 24px;
-    line-height: 2.1;
-    text-align: center;
-    color: #2e2520;
-  }
-  .contact__Text {
-    padding-top: 0px;
-    padding-bottom: 22px;
-    font-family: Montserrat, Arial;
-    font-size: 16px;
-    line-height: 2.1;
-    text-align: center;
-    color: #2e2520;
-  }
-  .contact__form {
-    width: 270px;
-    margin: auto;
-  }
-  .contact__form_input {
-    display: block;
-    width: 240px;
-    height: 20px;
-    margin: auto;
-    margin-bottom: 25px;
-    border: none;
-    border-bottom: 1px solid #ab816c;
-    font-family: Montserrat, Arial;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(171, 129, 108, 0.5);
-  }
-  .registration__form_button {
-    margin-top: 37px;
-  }
+.contact_section {
+  margin: auto;
+}
+
+.contact__title {
+  font-family: Caveat Brush, Arial;
+  font-size: 24px;
+  line-height: 2.1;
+  text-align: center;
+  color: #2e2520;
+}
+
+.contact__Text {
+  padding-top: 0px;
+  padding-bottom: 22px;
+  font-family: Montserrat, Arial;
+  font-size: 16px;
+  line-height: 2.1;
+  text-align: center;
+  color: #2e2520;
+}
+
+.contact__form {
+  width: 270px;
+  margin: auto;
+}
+
+.contact__form_input {
+  display: block;
+  width: 240px;
+  height: 20px;
+  margin: auto;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #ab816c;
+  font-family: Montserrat, Arial;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
 }
 
 @media screen and (max-width: 768px) {

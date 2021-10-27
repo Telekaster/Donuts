@@ -1,12 +1,20 @@
 .registration {
   @extend .container;
   margin: auto;
+  @media screen and (min-width: 769px) {
+    padding-bottom: 40px;
+  }
+}
 
+.registration_bg {
   @media screen and (max-width: 768px) {
     background-image: url(../images/mobile/rectangle_bg@1x.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 290px 510px;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    margin-top: -50px;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../images/mobile/rectangle_bg@2x.png);
@@ -14,6 +22,27 @@
 
     @media (min-resolution: 3dppx) {
       background-image: url(../images/mobile/rectangle_bg@4x.png);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background: url(../images/tablet/registration_donut@1x.png) no-repeat,
+      url(../images/tablet/registration_stribes@1x.png) no-repeat;
+    background-size: 196px 201px, 191px 345px;
+    background-position: 0 0, 545px 100px;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/tablet/registration_donut@2x.png) no-repeat,
+        url(../images/tablet/registration_stribes@2x.png) no-repeat;
+      background-size: 196px 201px, 191px 345px;
+      background-position: 0 0, 545px 100px;
+    }
+
+    @media (min-resolution: 3dppx) {
+      background: url(../images/tablet/registration_donut@4x.png) no-repeat,
+        url(../images/tablet/registration_stribes@4x.png) no-repeat;
+      background-size: 196px 201px, 191px 345px;
+      background-position: 0 0, 545px 100px;
     }
   }
 }
@@ -145,17 +174,16 @@ input::-webkit-input-placeholder {
   border: none;
   background: $brandColor;
 
-  font-family: Caveat Brush;
-  font-style: normal;
-  font-weight: normal;
+  font-family: $mainFont;
   font-size: 18px;
   line-height: 1;
   text-align: center;
   color: $whiteColor;
 
   @media screen and (min-width: 769px) {
-    margin-top: 98px;
+    margin-top: 95px;
     margin-left: 25px;
+    margin-bottom: 0px;
   }
 }
 
