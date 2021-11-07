@@ -12,15 +12,48 @@
         <source
             srcset="./images/tablet/header_donuts@1x.png 1x, ./images/tablet/header_donuts@2x.png 2x, ./images/tablet/header_donuts@4x.png 4x"
             media="(min-width: 769px)" type="image/png" />
-        <img src="./images/tablet/header_donuts@1x.png" alt="Пончики" loading="lazy">
+            
+        <img src="./images/desktop/bg_header_donuts_desktop@1x.png" alt="Пончики" loading="lazy">
     </picture>
 
+    <picture class="header__donuts_img_block">
+        <source
+            srcset="./images/desktop/bg_header_donuts_desktop@1x.png, ./images/desktop/bg_header_donuts_desktop@2x.png, ./images/desktop/bg_header_donuts_desktop@4x.png"
+            media="(min-width: 1280px)" type="image/png" />
+    
+        <img src="./images/desktop/bg_header_donuts_desktop@1x.png" alt="Пончики" loading="lazy">
+    </picture>
+
+    <div class="desktop__version">
 
     <a href="./index.html" class="header__logo_link">
         <svg class="header__logo_svg">
             <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
     </a>
+
+    <nav class="header__nav">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="#about_us" class="menu__link" id="about_Link">About us</a>
+            </li>
+            <li class="menu__item">
+                <a href="#program" class="menu__link" id="program_Link">Program</a>
+            </li>
+            <li class="menu__item">
+                <a href="#reviews" class="menu__link" id="reviews_link">Reviews</a>
+            </li>
+            <li class="menu__item">
+                <a href="#contact" class="menu__link" id="contacts_link">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+
+    </div>
+
+
 
 
     <button type="button" class="header__menu_button">

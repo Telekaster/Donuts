@@ -1,7 +1,7 @@
 .header {
   @media screen and (min-width: 769px) {
     margin: auto;
-    // margin-bottom: 300px;
+
     background-image: url(../images/tablet/header_bg_tablet@1x.png);
     width: 769px;
     height: 622px;
@@ -15,6 +15,21 @@
       background-image: url(../images/tablet/header_bg_tablet@4x.png);
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/desktop/header_bg_desktop@1x.png);
+    width: 1280px;
+    height: 1036px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/header_bg_desktop@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../images/desktop/header_bg_desktop@4x.png);
+    }
+  }
 }
 
 .header__section {
@@ -23,8 +38,6 @@
   @media screen and (max-width: 768px) {
     width: 320px;
     height: 460px;
-
-    margin: auto;
 
     background-image: url(../images/mobile/header_bg@1x.png);
     width: 320px;
@@ -59,6 +72,22 @@
     position: absolute;
     transform: translate(188px);
   }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.header__donuts_img_block {
+  display: none;
+
+  @media screen and (min-width: 769px) {
+    padding-top: 27px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
 
 .header__logo_link {
@@ -73,11 +102,44 @@
     padding-top: 27px;
     padding-bottom: 10px;
   }
+
+  @media screen and (min-width: 769px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 38px;
+    width: 158px;
+    height: 71px;
+  }
+}
+
+.desktop__version {
+  @media screen and (min-width: 769px) {
+    padding-top: 27px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 31px;
+
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__logo_svg {
   width: 96px;
   height: 43px;
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 71px;
+  }
+}
+
+.header__nav {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    align-items: center;
+  }
 }
 
 .header__menu_svg {
@@ -102,6 +164,9 @@
     transform: translateX(598px);
     top: 15px;
   }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .header__title_section {
@@ -119,25 +184,32 @@
   line-height: 1.27;
   color: $mainColor;
 
-  @media screen and (max-width: 768px) {
-    // font-family: $mainFont;
-    // font-size: 30px;
-    // line-height: 1.27;
-    // text-align: center;
-    // color: $mainColor;
+  @media screen and (min-width: 1280px) {
+    margin-top: 75px;
+
+    font-size: 64px;
+    line-height: 1;
   }
 }
 
 .header__title_text {
+  margin-top: 3px;
+
   font-family: $secondaryFont;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: $mainColor;
-  margin-top: 3px;
 
   @media screen and (max-width: 768px) {
     text-align: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 16px;
+
+    font-size: 24px;
+    line-height: 1.2;
   }
 }
 
@@ -159,6 +231,13 @@
     margin-top: 26px;
     margin-bottom: 31px;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 45px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+  }
 }
 
 .header__register_button:hover,
@@ -167,12 +246,19 @@
 }
 
 .header__register_button_text {
-  text-align: center;
-  padding-top: 6.5px;
+  padding-top: 5px;
+
   font-family: $mainFont;
   font-size: 18px;
   line-height: 1.4;
   color: $whiteColor;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 3px;
+    font-size: 24px;
+    display: block;
+  }
 }
 
 .header_socials_backround {
@@ -194,16 +280,24 @@
 }
 
 .header_socials {
+  display: flex;
+  justify-content: space-between;
   @media screen and (max-width: 768px) {
     width: 61px;
     margin-left: 129px;
+    @media screen and (min-width: 1280px) {
+      width: auto;
+    }
   }
 }
 
 .header_socials_list {
   display: flex;
-  width: 61px;
   justify-content: space-between;
+}
+
+.header_socials_items {
+  margin-right: 9.5px;
 }
 
 .header_socials_svg {
@@ -211,6 +305,10 @@
     fill: $mainColor;
 
     transition: fill 500ms linear;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 24px;
+    height: 19px;
   }
 }
 

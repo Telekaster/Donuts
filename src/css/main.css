@@ -70,10 +70,19 @@ select {
   font: inherit;
 }
 
+.container, .header__section, .about, .program, .reviews, .registration, .contact_section, .footer {
+  margin: auto;
+}
+
 @media screen and (min-width: 769px) {
   .container, .header__section, .about, .program, .reviews, .registration, .contact_section, .footer {
     width: 634px;
-    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container, .header__section, .about, .program, .reviews, .registration, .contact_section, .footer {
+    width: 824px;
   }
 }
 
@@ -99,11 +108,31 @@ select {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .header {
+    background-image: url(../images/desktop/header_bg_desktop@1x.png);
+    width: 1280px;
+    height: 1036px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../images/desktop/header_bg_desktop@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (min-resolution: 3dppx) {
+  .header {
+    background-image: url(../images/desktop/header_bg_desktop@4x.png);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header__section {
     width: 320px;
     height: 460px;
-    margin: auto;
     background-image: url(../images/mobile/header_bg@1x.png);
     width: 320px;
     height: 460px;
@@ -148,6 +177,28 @@ select {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .header__donuts_img_tablet {
+    display: none;
+  }
+}
+
+.header__donuts_img_block {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .header__donuts_img_block {
+    padding-top: 27px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__donuts_img_block {
+    display: block;
+  }
+}
+
 .header__logo_link {
   display: block;
   width: 96px;
@@ -168,9 +219,57 @@ select {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .header__logo_link {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 38px;
+    width: 158px;
+    height: 71px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .desktop__version {
+    padding-top: 27px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .desktop__version {
+    padding-top: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header__logo_svg {
   width: 96px;
   height: 43px;
+}
+
+@media screen and (min-width: 1280px) {
+  .header__logo_svg {
+    width: 158px;
+    height: 71px;
+  }
+}
+
+.header__nav {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .header__nav {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header__menu_svg {
@@ -204,6 +303,12 @@ select {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .header__menu_button {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header__title_section {
     margin-top: 33px;
@@ -220,18 +325,34 @@ select {
   color: #2e2520;
 }
 
+@media screen and (min-width: 1280px) {
+  .header__title_hero {
+    margin-top: 75px;
+    font-size: 64px;
+    line-height: 1;
+  }
+}
+
 .header__title_text {
+  margin-top: 3px;
   font-family: Montserrat, Arial;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: #2e2520;
-  margin-top: 3px;
 }
 
 @media screen and (max-width: 768px) {
   .header__title_text {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__title_text {
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 1.2;
   }
 }
 
@@ -261,6 +382,15 @@ select {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .header__register_button {
+    width: 158px;
+    height: 45px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+  }
+}
+
 .header__register_button:hover,
 .header__register_button:focus {
   -webkit-transform: scale(0.9);
@@ -268,12 +398,20 @@ select {
 }
 
 .header__register_button_text {
-  text-align: center;
-  padding-top: 6.5px;
+  padding-top: 5px;
   font-family: Caveat Brush, Arial;
   font-size: 18px;
   line-height: 1.4;
   color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .header__register_button_text {
+    padding-top: 3px;
+    font-size: 24px;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -298,6 +436,15 @@ select {
   }
 }
 
+.header_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media screen and (max-width: 768px) {
   .header_socials {
     width: 61px;
@@ -305,14 +452,23 @@ select {
   }
 }
 
+@media screen and (max-width: 768px) and (min-width: 1280px) {
+  .header_socials {
+    width: auto;
+  }
+}
+
 .header_socials_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 61px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header_socials_items {
+  margin-right: 9.5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -320,6 +476,13 @@ select {
     fill: #2e2520;
     -webkit-transition: fill 500ms linear;
     transition: fill 500ms linear;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header_socials_svg {
+    width: 24px;
+    height: 19px;
   }
 }
 
@@ -421,6 +584,14 @@ select {
   list-style: none;
 }
 
+@media screen and (min-width: 1280px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .menu__item {
   display: block;
   text-align: center;
@@ -430,6 +601,13 @@ select {
   margin-bottom: 45px;
 }
 
+@media screen and (min-width: 1280px) {
+  .menu__item:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+}
+
 .menu__link {
   text-decoration: none;
   font-family: Montserrat, Arial;
@@ -437,6 +615,13 @@ select {
   font-size: 24px;
   line-height: 1.21;
   color: #2e2520;
+}
+
+@media screen and (min-width: 1280px) {
+  .menu__link {
+    font-size: 18px;
+    line-height: 1.23;
+  }
 }
 
 .menu__link:hover,
