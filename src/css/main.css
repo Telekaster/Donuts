@@ -86,6 +86,13 @@ select {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .header__line {
+    background-color: #fef3e4;
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .header {
     margin: auto;
@@ -110,7 +117,10 @@ select {
 
 @media screen and (min-width: 1280px) {
   .header {
+    background-color: white;
     background-image: url(../images/desktop/header_bg_desktop@1x.png);
+    min-width: 1280px;
+    max-width: auto;
     width: 1280px;
     height: 1036px;
     background-repeat: no-repeat;
@@ -183,19 +193,16 @@ select {
   }
 }
 
-.header__donuts_img_block {
+.header__donuts_img_desktop {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
-  .header__donuts_img_block {
-    padding-top: 27px;
-  }
-}
-
 @media screen and (min-width: 1280px) {
-  .header__donuts_img_block {
+  .header__donuts_img_desktop {
     display: block;
+    position: absolute;
+    -webkit-transform: translate(330px);
+            transform: translate(330px);
   }
 }
 
@@ -327,7 +334,7 @@ select {
 
 @media screen and (min-width: 1280px) {
   .header__title_hero {
-    margin-top: 75px;
+    margin-top: 60px;
     font-size: 64px;
     line-height: 1;
   }
@@ -493,6 +500,12 @@ select {
 
 .hero__main_pic {
   pointer-events: all;
+}
+
+.header__spoon {
+  position: absolute;
+  -webkit-transform: translate(171px, 170px);
+          transform: translate(171px, 170px);
 }
 
 .about_picture {

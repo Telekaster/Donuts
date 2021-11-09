@@ -1,7 +1,13 @@
+.header__line {
+  @media screen and (min-width: 1280px) {
+    background-color: #fef3e4;
+    margin: auto;
+  }
+}
+
 .header {
   @media screen and (min-width: 769px) {
     margin: auto;
-
     background-image: url(../images/tablet/header_bg_tablet@1x.png);
     width: 769px;
     height: 622px;
@@ -17,7 +23,10 @@
   }
 
   @media screen and (min-width: 1280px) {
+    background-color: white;
     background-image: url(../images/desktop/header_bg_desktop@1x.png);
+    min-width: 1280px;
+    max-width: auto;
     width: 1280px;
     height: 1036px;
     background-repeat: no-repeat;
@@ -38,7 +47,6 @@
   @media screen and (max-width: 768px) {
     width: 320px;
     height: 460px;
-
     background-image: url(../images/mobile/header_bg@1x.png);
     width: 320px;
     height: 460px;
@@ -53,6 +61,22 @@
       background-image: url(../images/mobile/header_bg@4x.png);
     }
   }
+
+  // @media screen and (min-width: 1280px) {
+  //   background: white;
+  //   background-image: url(../images/desktop/header_bg_desktop@1x.png);
+  //   width: 1280px;
+  //   height: 1036px;
+  //   background-repeat: no-repeat;
+
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url(../images/desktop/header_bg_desktop@2x.png);
+  //   }
+
+  //   @media (min-resolution: 3dppx) {
+  //     background-image: url(../images/desktop/header_bg_desktop@4x.png);
+  //   }
+  // }
 }
 
 .header__donuts_img_mobile {
@@ -78,15 +102,13 @@
   }
 }
 
-.header__donuts_img_block {
+.header__donuts_img_desktop {
   display: none;
-
-  @media screen and (min-width: 769px) {
-    padding-top: 27px;
-  }
 
   @media screen and (min-width: 1280px) {
     display: block;
+    position: absolute;
+    transform: translate(330px);
   }
 }
 
@@ -185,7 +207,7 @@
   color: $mainColor;
 
   @media screen and (min-width: 1280px) {
-    margin-top: 75px;
+    margin-top: 60px;
 
     font-size: 64px;
     line-height: 1;
@@ -319,6 +341,11 @@
 
 .hero__main_pic {
   pointer-events: all;
+}
+
+.header__spoon {
+  position: absolute;
+  transform: translate(171px, 170px);
 }
 
 .about_picture {
