@@ -1,4 +1,5 @@
 <!-- Header -->
+<div class="header__underground">
 <div class="header__line">
 
 <picture class="header__spoon">
@@ -149,9 +150,25 @@
 <picture class="about_picture">
     <source
         srcset="./images/tablet/cupcake_box@1x.png 1x, ./images/tablet/cupcake_box@2x.png 2x, ./images/tablet/cupcake_box@4x.png 4x"
-        type="image/png" loading="lazy" />
+        media="(min-width: 769px)" 
+        type="image/png" 
+        loading="lazy" />
+    
+    <source
+        srcset="./images/desktop/box_about@1x.png 1x, ./images/desktop/box_about@1x.png 2x, ./images/desktop/box_about@4x.png 4x"
+        media="(min-width: 1280px)" 
+        type="image/png" 
+        loading="lazy" />
     <img src="./images/tablet/cupcake_box@1x.png" alt="Cupcake Box">
 </picture>
 
+<picture class="about__picture_desktop">
+    <source
+        srcset="./images/desktop/box_about@1x.png 1x, ./images/desktop/box_about@2x.png 2x, ./images/desktop/box_about@4x.png 4x"
+            type="image/png" loading="lazy" />
+    <img src="./images/desktop/box_about@1x.png" alt="Cupcake Box">
+</picture>
+
 </header>
+</div>
 </div>

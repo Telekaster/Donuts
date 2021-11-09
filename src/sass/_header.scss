@@ -1,8 +1,22 @@
-.header__line {
+.header__underground {
   @media screen and (min-width: 1280px) {
     background-color: #fef3e4;
+  }
+}
+.header__line {
+  @media screen and (min-width: 1280px) {
+    width: 1600px;
     margin: auto;
   }
+}
+
+.header__spoon {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+  position: absolute;
+  transform: translate(157px, 170px);
 }
 
 .header {
@@ -343,16 +357,24 @@
   pointer-events: all;
 }
 
-.header__spoon {
-  position: absolute;
-  transform: translate(171px, 170px);
-}
-
 .about_picture {
   display: none;
   @media screen and (min-width: 769px) {
     display: block;
     position: absolute;
     transform: translate(2px, 80px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.about__picture_desktop {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: absolute;
+    transform: translate(75px, 45px);
   }
 }
