@@ -6,43 +6,76 @@
   width: 320px;
   height: 500px;
   @media screen and (min-width: 769px) {
-    margin-top: 270px;
+    margin-top: -220px;
     width: 769px;
     text-align: left;
   }
+  @media screen and (min-width: 1280px) {
+    margin-top: -380px;
+    width: 952px;
+    margin-bottom: 188px;
+  }
 }
 
-// .program_section {
-//   @media screen and (min-width: 769px) {
-//     // display: flex;
-//     // justify-content: space-around;
-//     // width: 400px;
-//   }
-// }
+.program_section {
+  @media screen and (min-width: 769px) {
+    // display: flex;
+    // justify-content: space-around;
+    // width: 400px;
+  }
+}
 
 .program_text_section {
   @media screen and (min-width: 769px) {
     width: 320px;
-    // position: absolute;
     transform: translate(67px, 0px);
   }
 }
 
 .program__title {
   @extend .about_title;
+  @media screen and (min-width: 1280px) {
+    line-height: 2.5;
+  }
 }
 .program__text {
   @extend .about_text_1;
   display: block;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1280px) {
+    width: 340px;
+    margin-bottom: 25px;
+  }
 }
 
 .program__item {
   @extend .about_text_1;
+  @media screen and (min-width: 1280px) {
+    width: 400px;
+    display: block;
+    font-family: $secondaryFont;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $mainColor;
+  }
 }
 
 .program__item:not(:last-child) {
   margin-bottom: 10px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+
+.program__text_desktop {
+  font-family: $secondaryFont;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $mainColor;
+
+  margin-top: 24px;
+  width: 370px;
 }
 
 .program__link {

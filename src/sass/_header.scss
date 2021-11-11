@@ -1,6 +1,14 @@
+.header {
+  @media screen and (min-width: 1280px) {
+    // padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  // background-color: #fef3e4;
+}
 .header__underground {
   @media screen and (min-width: 1280px) {
-    background-color: #fef3e4;
+    // background-color: #fef3e4;
   }
 }
 .header__line {
