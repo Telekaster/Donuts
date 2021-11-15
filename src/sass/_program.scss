@@ -89,7 +89,11 @@
   position: static;
   @media screen and (min-width: 769px) {
     position: absolute;
-    transform: translate(405px, -421px);
+    transform: translate(415px, -535px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    transform: translate(500px, -520px);
   }
 }
 
@@ -107,6 +111,20 @@
   @media (min-resolution: 3dppx) {
     background-image: url(../images/mobile/program_bg@4x.png);
   }
+
+  @media (min-width: 1280px) {
+    background-image: url(../images/desktop/events_bg_desktop@1x.png);
+    width: 180px;
+    height: 180px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/events_bg_desktop@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../images/desktop/events_bg_desktop@4x.png);
+    }
+  }
 }
 
 .event__2 {
@@ -117,6 +135,17 @@
 .event__1_img {
   position: absolute;
   transform: translate(45%, -30px);
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.event__1_img_desktop {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: absolute;
+    transform: translate(45%, -45px);
+  }
 }
 
 .event__2_img {
@@ -142,6 +171,12 @@
   line-height: 1.28;
   text-align: center;
   color: $blackColor;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 64px;
+  }
 }
 
 .event__text {
