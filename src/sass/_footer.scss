@@ -1,80 +1,51 @@
-.footer {
-  @extend .container;
-  margin: auto;
-  margin-top: 147px;
-  width: 320px;
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 294px;
+    margin: auto;
+    margin-top: 142px;
 
-  background-image: url(../images/mobile/flour@1x.png);
-  background-size: 113px;
-  background-repeat: no-repeat;
-  background-position: right bottom;
+    background-image: url(../images/mobile/flour@1x.png);
+    background-size: 113px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url(../images/mobile/flour@2x.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/flour@2x.png);
+    }
+
+    @media (min-resolution: 3dppx) {
+      background-image: url(../images/mobile/flour@4x.png);
+    }
   }
 
-  @media (min-resolution: 3dppx) {
-    background-image: url(../images/mobile/flour@4x.png);
+  .footer__socials_list {
+    display: flex;
+    justify-content: center;
   }
 
-  @media screen and (min-width: 769px) {
-    width: 634px;
-    margin-top: -55px;
-    padding-top: 55px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-image: url(../images/tablet/wheat_tablet@1x.png);
-    background-size: 198px;
+  .footer__socials_items {
+    margin-right: 9.5px;
+    margin-bottom: 34px;
   }
-}
 
-.footer__socials_list {
-  display: flex;
-  justify-content: center;
-}
-
-.footer__socials_items {
-  margin-right: 9.5px;
-  margin-bottom: 51px;
-  @media screen and (min-width: 769px) {
-    margin-bottom: 51px;
+  .footer__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 22px;
   }
-}
 
-.footer__socials_svg:hover,
-.footer__socials_svg:focus {
-  fill: $brandColor;
-}
+  .footer_phone_area {
+    font-family: $secondaryFont;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    color: $mainColor;
+  }
 
-.footer__contacts {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-bottom: 22px;
-}
-
-.footer_phone_area {
-  font-family: $secondaryFont;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: right;
-  color: $mainColor;
-  margin-bottom: 21px;
-}
-
-.footer_adress_area {
-  @extend .footer_phone_area;
-}
-
-.footer_phone_area:hover,
-.footer_phone_area:focus {
-  fill: $brandColor;
-  text-color: $brandColor;
-}
-
-.footer_phone_link:hover,
-.footer_phone_link:focus {
-  color: $brandColor;
+  .footer_adress_area {
+    @extend .footer_phone_area;
+  }
 }
