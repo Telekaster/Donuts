@@ -1,8 +1,9 @@
 .long_background {
+  @extend .container;
   background-image: url(../images/mobile/reviews_bg@1x.png);
   margin: auto;
-  margin-top: 345px;
-  width: 324px;
+  margin-top: 442px;
+  // width: 324px;
   height: 1215px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -16,7 +17,7 @@
   @media screen and (min-width: 769px) {
     background-image: url(../images/tablet/long_background@1x.png);
     width: 773px;
-    margin-top: -150px;
+    margin-top: -85px;
     @media (min-resolution: 2dppx) {
       background-image: url(../images/tablet/long_background@2x.png);
     }
@@ -24,10 +25,33 @@
       background-image: url(../images/tablet/long_background@4x.png);
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    background: url(../images/desktop/long_background_desktop@1x.png) 50% 50%;
+
+    position: relative;
+    width: 600px;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/long_background_desktop@2x.png);
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url(../images/desktop/long_background_desktop@4x.png);
+    }
+  }
 }
 
 .reviews {
   @extend .container;
+  display: block;
+  border: 1px solid green;
+  min-width: 200px;
+  // max-width: 600px;
+  // position: relative;
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+    display: block;
+    border: 1px solid green;
+  }
 }
 
 .reviews__title {
@@ -36,6 +60,11 @@
   transform: translate(129px, -5px);
   @media screen and (min-width: 769px) {
     transform: translate(280px, 25px);
+  }
+  @media screen and (min-width: 1280px) {
+    transform: translate(280px, 25px);
+    font-size: 36px;
+    line-height: 65px;
   }
 }
 

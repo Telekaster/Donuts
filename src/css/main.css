@@ -70,20 +70,24 @@ select {
   font: inherit;
 }
 
-.container, .header__section, .about, .program, .reviews, .registration, .contact_section, .footer {
+.container, .header__section, .about, .program, .long_background, .reviews, .registration, .contact_section, .footer {
   margin: auto;
 }
 
 @media screen and (min-width: 769px) {
-  .container, .header__section, .about, .program, .reviews, .registration, .contact_section, .footer {
+  .container, .header__section, .about, .program, .long_background, .reviews, .registration, .contact_section, .footer {
     width: 634px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container, .header__section, .about, .program, .reviews, .registration, .contact_section, .footer {
-    width: 824px;
+  .container, .header__section, .about, .program, .long_background, .reviews, .registration, .contact_section, .footer {
+    min-width: 824px;
   }
+}
+
+.general {
+  position: relative;
 }
 
 @media screen and (min-width: 1280px) {
@@ -959,16 +963,73 @@ select {
           transform: translate(50%, -30px);
 }
 
+@media screen and (min-width: 1280px) {
+  .event__2_img {
+    display: none;
+  }
+}
+
+.event__2_img_desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .event__2_img_desktop {
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(50%, -37px);
+            transform: translate(50%, -37px);
+  }
+}
+
 .event__3_img {
   position: absolute;
   -webkit-transform: translate(60%, -30px);
           transform: translate(60%, -30px);
 }
 
+@media screen and (min-width: 1280px) {
+  .event__3_img {
+    display: none;
+  }
+}
+
+.event__3_img_desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .event__3_img_desktop {
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(60%, -35px);
+            transform: translate(60%, -35px);
+  }
+}
+
 .event__4_img {
   position: absolute;
   -webkit-transform: translate(60%, -30px);
           transform: translate(60%, -30px);
+}
+
+@media screen and (min-width: 1280px) {
+  .event__4_img {
+    display: none;
+  }
+}
+
+.event__4_img_desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .event__4_img_desktop {
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(60%, -30px);
+            transform: translate(60%, -30px);
+  }
 }
 
 .event__title {
@@ -998,9 +1059,25 @@ select {
   color: #000000;
 }
 
-.event__1_svg {
+@media screen and (min-width: 1280px) {
+  .event__text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.event__icon {
   display: block;
   margin: auto;
+  width: 19px;
+  height: 18px;
+}
+
+@media screen and (min-width: 1280px) {
+  .event__icon {
+    width: 25px;
+    height: 23px;
+  }
 }
 
 .event__area_2 {
@@ -1009,10 +1086,17 @@ select {
           transform: translate(148px, -325px);
 }
 
+@media screen and (min-width: 1280px) {
+  .event__area_2 {
+    -webkit-transform: translate(210px, -360px);
+            transform: translate(210px, -360px);
+  }
+}
+
 .long_background {
   background-image: url(../images/mobile/reviews_bg@1x.png);
   margin: auto;
-  margin-top: 345px;
+  margin-top: 442px;
   width: 324px;
   height: 1215px;
   background-repeat: no-repeat;
@@ -1035,7 +1119,7 @@ select {
   .long_background {
     background-image: url(../images/tablet/long_background@1x.png);
     width: 773px;
-    margin-top: -150px;
+    margin-top: -85px;
   }
 }
 
@@ -1051,6 +1135,27 @@ select {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .long_background {
+    background-image: url(../images/desktop/long_background_desktop@1x.png);
+    position: relative;
+    width: auto;
+    left: 250px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .long_background {
+    background-image: url(../images/desktop/long_background_desktop@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (min-resolution: 3dppx) {
+  .long_background {
+    background-image: url(../images/desktop/long_background_desktop@4x.png);
+  }
+}
+
 .reviews__title {
   position: absolute;
   -webkit-transform: translate(129px, -5px);
@@ -1061,6 +1166,13 @@ select {
   .reviews__title {
     -webkit-transform: translate(280px, 25px);
             transform: translate(280px, 25px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__title {
+    font-size: 36px;
+    line-height: 65px;
   }
 }
 

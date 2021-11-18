@@ -1,6 +1,6 @@
 .about {
   @extend .container;
-  margin: auto;
+  // margin: auto;
   margin-top: 150px;
   width: 290px;
   margin-bottom: -150px;
@@ -13,13 +13,13 @@
     transform: translate(430px, -260px);
   }
 
-  @media screen and(min-width:1280px) {
-    width: 830px;
-    position: relative;
-    margin: auto;
-    height: auto;
-    transform: translate(435px, -420px);
-  }
+  // @media screen and(min-width:1280px) {
+  //   width: 830px;
+  //   position: relative;
+  //   margin: auto;
+  //   height: auto;
+  //   transform: translate(435px, -420px);
+  // }
 }
 
 // .about_section {
@@ -50,9 +50,9 @@
     text-align: left;
     margin-bottom: 0px;
   }
-  @media screen and (min-width: 1280px) {
-    font-size: 36px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   font-size: 36px;
+  // }
 }
 
 .about_text_1 {
@@ -64,9 +64,9 @@
     display: block;
     width: 350px;
   }
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   display: none;
+  // }
 }
 .about_text_2 {
   @extend .about_text_1;
@@ -76,9 +76,9 @@
     display: block;
     width: 340px;
   }
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   display: none;
+  // }
 }
 
 .about_text_desktop {
@@ -88,10 +88,10 @@
   line-height: 1.26;
   color: $mainColor;
 
-  @media screen and (min-width: 1280px) {
-    display: block;
-    width: 392px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   display: block;
+  //   width: 392px;
+  // }
 }
 
 .about_link {
@@ -99,7 +99,7 @@
   font-size: 18px;
   line-height: 3.61;
   color: $brandColor;
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   display: none;
+  // }
 }
