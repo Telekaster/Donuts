@@ -76,7 +76,11 @@ select {
 
 @media screen and (min-width: 769px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   .container, .header__section, .about, .program, .long_background, .reviews, .registration, .contact_section, .footer {
+=======
+  .container, .header__section, .about, .program, .reviews, .registration, .contact_section {
+>>>>>>> parent of 0de1e74 (footer_tablet_1.0)
 =======
   .container, .header__section, .about, .program, .reviews, .registration, .contact_section {
 >>>>>>> parent of 0de1e74 (footer_tablet_1.0)
